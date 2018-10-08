@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">      
+    <title>jQuery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .slider {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .slider__container {
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            text-align: center;
+            transition: 0.5s;
+            position: relative;
+        }
+        .slider__controls {
+            text-align: center;
+            margin-top: 30px;
+            
+        }
+        .slider__control {
+            width: 20px;
+            height: 20px;
+            margin: 0 10px;
+            background-color: #000;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .slider__control--isActive {
+            background-color: red;
+        }
+        .slider__control_right {
+            width: 20px;
+            height: 20px;
+            background-color:#FF87F3;
+            display: inline-block;
+            cursor: pointer;
+            border: 1px solid #FFDD00;
+            position: absolute;
+            right: 0;
+            top: 170px;
+            text-align: center;
+        }
+        .slider__control_left {
+            width: 20px;
+            height: 20px;
+            background-color:#FF87F3;
+            display: inline-block;
+            cursor: pointer;
+            border: 1px solid #FFDD00;
+            position: absolute;
+            left: 0;
+            top: 170px;
+            text-align: center;
+        }
+        .slider__control_left:hover , .slider__control_n:hover {
+        background-color: #D0FF00;
+        }
+        .slider__control_right:hover {
+        background-color:  #D0FF00;
+        }   
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        
+        <div class="slider__container">
+            <div class="lr">
+                <div class="slider__control_left"><i class="fas fa-arrow-left"></i></div>
+                <div class="slider__control_right"><i class="fas fa-arrow-right"></i></div>
+            </div>
+            
+        </div>
+        <div class="slider__controls"></div>
+        
+    </div>
+
+    
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
